@@ -1,15 +1,18 @@
-var elTest = $('.show-api-data');
+var elJacksonForecast = $('.show-api-data');
 
 jQuery(document).ready(function($) {
   $.ajax({
   //Jackson Hole Lat and Long
-  url : "http://api.wunderground.com/api/f6866eb728034f07/geolookup/conditions/q/43.4799,-110.7624.json",
+  url : "https://api.wunderground.com/api/f6866eb728034f07/forecast/q/43.5873,-110.8270.json",
   dataType : "jsonp",
   success : function(parsed_json) {
-  var location = parsed_json['location']['city'];
-  var temp_f = parsed_json['current_observation']['temp_f'];
-  elTest.html(
-    "Location: " + location + " is " + temp_f + " degrees currently."
+  var jacksonWeatherUnit0 = 
+    parsed_json['forecast']['simpleforecast']['forecastday']['0']['snow_allday']['in'];
+  console.log(jacksonWeatherUnit0);
+  console.log(parsed_json);
+  elJacksonForecast.html(
+    "Jackson Hole, Wyoming<br>" +
+    "Snow expected today is " + jacksonWeatherUnit0 + " inches"
   );
   }
   });
