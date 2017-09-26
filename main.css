@@ -62,8 +62,8 @@ footer {
   background-color: #A31312;
 }
 
-.boxes-wrapper {
-  margin-left: 2%;
+.boxes-row-1, .boxes-row-2 {
+  margin-left: auto;
 }
 
 .show-api-data {
@@ -71,6 +71,7 @@ footer {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
+  margin-left: 2%;
   border-radius: 5px;
   padding: 20px;
   background-color: #BFBCBD;
