@@ -58,13 +58,18 @@ footer {
 .lower-wrapper {
   width: 100%;
   margin-top: -1%;
+  padding: 2%;
   background-color: #A31312;
+}
+
+.boxes-wrapper {
+  margin-left: 2%;
 }
 
 .show-api-data {
   display: inline-block;
+  text-align: center;
   margin-top: 5%;
-  margin-left: 2%;
   margin-bottom: 5%;
   border-radius: 5px;
   padding: 20px;
