@@ -3,10 +3,6 @@
     font-size: 56px;
   }
 
-  .boxes-row-1, .boxes-row-2 {
-    display: none;
-  }
-
   .show-api-data {
     margin-left: auto;
   }
