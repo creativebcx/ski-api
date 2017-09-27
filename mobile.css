@@ -3,13 +3,25 @@
     font-size: 56px;
   }
 
+  boxes-wrapper {
+    padding-left: 0%;
+  }
+
   .show-api-data {
-    margin-left: auto;
+    margin-left: 1%;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .landing-title {
     font-size: 34px;
+  }
+
+  boxes-wrapper {
+    padding-left: 0%;
+  }
+
+  .show-api-data {
+    margin-left: 10%;
   }
 }

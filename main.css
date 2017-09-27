@@ -62,8 +62,8 @@ footer {
   background-color: #A31312;
 }
 
-.boxes-row-1, .boxes-row-2 {
-  margin-left: auto;
+.boxes-wrapper {
+  padding-left: 2%;
 }
 
 .show-api-data {
