@@ -26,7 +26,7 @@ footer {
   position: absolute;
   margin-left: 20%;
   font-size: 95px;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .landing-instructions {
@@ -36,7 +36,13 @@ footer {
   margin-left: 20%;
   margin-top: 40%;
   font-size: 24px;
-  font-weight: 900;
+  font-weight: bold;
+}
+
+.down-icon-wrapper img {
+  position: absolute;
+  margin-top: 37%;
+  margin-left: 70%;
 }
 
 .navbar-wrapper {
@@ -109,4 +115,12 @@ footer {
   -webkit-animation-delay: 1.4s;
   -moz-animation-delay:1.4s;
   animation-delay: 1.4s;
+}
+
+.blink-me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
 }

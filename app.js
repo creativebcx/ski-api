@@ -8,7 +8,7 @@ var elBaker = $('.baker');
 jQuery(document).ready(function($) {
   $.ajax({
   //Jackson Hole Lat and Long
-  url : "https://api.wunderground.com/api/f6866eb728034f07/forecast/q/43.5873,-110.8270.json",
+  url : "https://api.wunderground.com/api/d8a5536f9571d386/forecast/q/43.5873,-110.8270.json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var WeatherUnit = { 
@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
   $.ajax({
   //Alta & Snowbird Lat and Long
-  url : "https://api.wunderground.com/api/f6866eb728034f07/forecast/q/40.5819,-111.6552.json",
+  url : "https://api.wunderground.com/api/d8a5536f9571d386/forecast/q/40.5819,-111.6552.json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var WeatherUnit = { 
@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
   $.ajax({
   //Bachlor Lat and Long
-  url : "https://api.wunderground.com/api/f6866eb728034f07/forecast/q/43.9792,-121.6886.json",
+  url : "https://api.wunderground.com/api/d8a5536f9571d386/forecast/q/43.9792,-121.6886.json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var WeatherUnit = { 
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
   $.ajax({
   //Baker Lat and Long
-  url : "https://api.wunderground.com/api/f6866eb728034f07/forecast/q/48.7767,-121.8144.json",
+  url : "https://api.wunderground.com/api/d8a5536f9571d386/forecast/q/48.7767,-121.8144.json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var WeatherUnit = { 
@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
   $.ajax({
   //Squaw Lat and Long
-  url : "https://api.wunderground.com/api/f6866eb728034f07/forecast/q/39.1970,-120.2357.json",
+  url : "https://api.wunderground.com/api/d8a5536f9571d386/forecast/q/39.1970,-120.2357.json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var WeatherUnit = { 
@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
   $.ajax({
   //Sun Valley Lat and Long
-  url : "https://api.wunderground.com/api/f6866eb728034f07/forecast/q/43.6971,-114.3517.json",
+  url : "https://api.wunderground.com/api/d8a5536f9571d386/forecast/q/43.6971,-114.3517.json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var WeatherUnit = { 
@@ -131,3 +131,16 @@ jQuery(document).ready(function($) {
   }
   });
 });
+
+/* NOAA
+jQuery(document).ready(function($) {
+  $.ajax({
+    url : "https://www.ncdc.noaa.gov/cdo-web/api/v2/datatypes?stationid=COOP:010957",
+    data : {data: "json"},
+    headers: {token: "zfGZOWPpYRlRpraFbPTrcQJOWotlOLCn"},
+    success : function(returnedData) {
+      console.log(returnedData);
+    }
+  });
+});
+*/
