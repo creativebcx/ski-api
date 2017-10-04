@@ -64,12 +64,11 @@ footer {
 .lower-wrapper {
   width: 100%;
   margin-top: -1%;
-  padding: 2%;
   background-color: #A31312;
 }
 
-.boxes-wrapper {
-  padding-left: 2%;
+.upper-boxes-wrapper, .lower-boxes-wrapper {
+  text-align: center;
 }
 
 .show-api-data {

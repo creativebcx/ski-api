@@ -1,9 +1,17 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
+  .down-icon-wrapper {
+    display: none;
+  }
+  
+  .upper-boxes-wrapper, .lower-boxes-wrapper {
+    
+  }
+
   .landing-title {
     font-size: 56px;
   }
 
-  boxes-wrapper {
+  .boxes-wrapper {
     padding-left: 0%;
   }
 
@@ -15,6 +23,10 @@
 @media only screen and (max-width: 600px) {
   .landing-title {
     font-size: 34px;
+  }
+
+  .down-icon-wrapper {
+    display: none;
   }
 
   boxes-wrapper {
